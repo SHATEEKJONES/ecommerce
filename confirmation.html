@@ -42,8 +42,15 @@
 
     <div class="container mt-5">
       <h1>Order Confirmation</h1>
+      <br>
+      <h6>Order</h6>
+      <br>
       <div id="order-summary">
         <!-- Order summary will be dynamically inserted here -->
+      </div>
+      <h6>This order is being shipped to:</h6>
+      <div id="order-location">
+
       </div>
       <p>
         Thank you for your business! Your order will be shipped within 3-5
@@ -53,8 +60,61 @@
 
     <script>
       document.addEventListener("DOMContentLoaded", function () {
-       
+        const query = new URLSearchParams(window.location.search);
+        Array.from(query.entries());
+        let summary = document.getElementById('order-summary');
+        let location = document.getElementById('order-location');
+        let address = query.getAll('address');
+        let apartment = query.getAll('apartment');
+        let city = query.getAll('city');
+        let state = query.getAll('state');
+        let zip = query.getAll('zip');
+        let ids = query.getAll('id')
+        let names = query.getAll('names')
+        let price = query.getAll('price'); 
+        let newPrice = price.map(Number);
+        let ordersum = ""
+
+        if(apartment == "")
+        {
+          apartment = "None";
+        }
+
+
+        for(let i = 0; i < ids.length; i++){
+          ordersum +=  
+          `
+          <div class="cart-item">
+          <h4>${names[i]}</h4>
+          <h5>$${price[i]}</h5>
+          <hr>
+          </div>
+            `;
+          }
+
+        
+            summary.innerHTML = ordersum;
+
+            let loco = 
+            `
+            <br>
+          <div class="order-item">
+          <h5>Address: ${address}</h5>
+          <hr>
+          <h5>Apartment #: ${apartment}</h5>
+          <hr>
+          <h5>City: ${city}</h5>
+          <hr>
+          <h5>State: ${state}</h5>
+          <hr>
+          <h5>Zip Code: ${zip}</h5>
+          <hr>
+          </div>
+            `;
+
+            location.innerHTML = loco;
       });
     </script>
   </body>
 </html>
+ 

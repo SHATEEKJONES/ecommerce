@@ -41,15 +41,18 @@
     </nav>
 
     <div class="container mt-5">
-      <form action="checkout.html" method="get">
-      <h2>Cart</h2>
-      <div id="cart-list">
-        
+        <form action="checkout.html" method="get">
+          <label for="firstName">First Name</label>
+          <input type="text" name="firstName" value=""><br>
+          <label for="lastName">Last Name</label>
+          <input type="text" name="lasttName" value=""><br>
+          <input type="hidden" name="hiddenvalue" value="Secret">
+          <button type="submit">Submit</button>
+        </form>
     </div>
 
-    <button class="btn btn-primary" id="checkout-button" type="submit">Checkout</button>
-  </form>
-</div>
+    <button class="btn btn-primary" id="checkout-button">Checkout</button>
+
     <div class="container mt-5">
       <h1>Products</h1>
       <div class="row" id="product-list">
@@ -137,9 +140,6 @@
           <div class="cart-item">
           <h5>${product.name}</h5>
           <p>${product.price} x 1</p>
-           <input type="hidden" name="id" value="${product.id}">
-           <input type="hidden" name="name" value="${product.name}">
-           <input type="hidden" name="price" value="${product.price}">
           <button class="btn btn-secondary increase-quantity" data-id="${product.id}">+</button>
           <button class="btn btn-secondary decrease-quantity" data-id="${product.id}">-</button>
           <button class="btn btn-danger remove-from-cart" data-id="${product.id}">Remove</button>
@@ -160,7 +160,7 @@
             const productIndex = cart.findIndex(
               (product) => product.id == productId,
             );
-            cart.splice(productIndex - 1,1)
+            cart.splice(productIndex - 1)
             renderCart();
           }
       });

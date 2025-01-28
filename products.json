@@ -2,24 +2,66 @@
   "products": [
     {
       "id": 1,
-      "name": "Product 1",
-      "description": "Description for product 1",
-      "price": 10.99,
-      "image": "https://placehold.co/100"
+      "name": "Trusty Compass",
+      "description": "A compass fit for the bravest adventurers.",
+      "price": 15.99,
+      "image": "https://assets.leevalley.com/Size4/10109/45K1670-engineers-compass-u-0014.jpg"
     },
     {
       "id": 2,
-      "name": "Product 2",
-      "description": "Description for product 2",
-      "price": 12.99,
-      "image": "https://placehold.co/100"
+      "name": "Reliably Accurate Clock",
+      "description": "A clock that does it's job.",
+      "price": 8.99,
+      "image": "https://i5.walmartimages.com/asr/c38b8a7f-9c8e-4da2-b7d7-1c09e2e41545_2.7c517e608d4e4eda27b6150f26954783.jpeg?odnHeight=768&odnWidth=768&odnBg=FFFFFF"
     },
     {
       "id": 3,
-      "name": "Product 3",
-      "description": "Description for product 3",
-      "price": 15.99,
-      "image": "https://placehold.co/100"
+      "name": "Half of a Broken Skateboard",
+      "description": "Other half sold seperately.",
+      "price": 9.99,
+      "image": "https://us.v-cdn.net/5021068/uploads/ZTOOQVGJ5ELD/austin-smith-main-1.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Other Half of a Broken Skateboard",
+      "description": "Other half sold seperately.",
+      "price": 9.99,
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcQKqxs-v0Z6t8icWUvE0Vqg2X3IggLawdmQ&s"
+    },
+    {
+      "id": 5,
+      "name": "Missouri State",
+      "description": "The entire state of Missouri. (Price negotiable.)",
+      "price": 69.99,
+      "image": "https://www.worldatlas.com/upload/5b/dc/20/mo-04.png"
+    },
+    {
+      "id": 6,
+      "name": "Duct Tape",
+      "description": "Duct Tape for the skateboards.",
+      "price": 12.99,
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/89/Duct-tape.jpg/640px-Duct-tape.jpg"
+    },
+    {
+      "id": 7,
+      "name": "Megaton Hammer",
+      "description": "Literally the Megaton Hammer from Ocarina of Time",
+      "price": 89.99,
+      "image": "https://static.wikia.nocookie.net/zelda_gamepedia_en/images/b/be/OoT3D_Megaton_Hammer_Artwork.png/revision/latest/scale-to-width-down/320?cb=20171012115440"
+    },
+    {
+      "id": 8,
+      "name": "Product 8",
+      "description": "Description for product 8",
+      "price": 2.99,
+      "image": "https://placehold.co/200"
+    },
+    {
+      "id": 9,
+      "name": "Product 9",
+      "description": "Description for product 9",
+      "price": 79.99,
+      "image": "https://placehold.co/200"
     }
   ]
 }
